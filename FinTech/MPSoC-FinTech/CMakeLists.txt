@@ -4,14 +4,14 @@ cmake_minimum_required(VERSION 2.8.10)
 
 # Project's name
 
-project(SoC)
+project(MPSoC-FinTech)
 
 link_directories(../mpsoc-ntm/opennn)
 
 include_directories(../mpsoc-ntm/opennn)
 
-add_executable(SoC main.cpp)
+add_executable(MPSoC-FinTech main.cpp)
 
-target_link_libraries(SoC opennn)
+target_link_libraries(MPSoC-FinTech opennn)
 
 
