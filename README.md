@@ -276,7 +276,35 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 
 ## 2.3. FUNCTIONALITY
 
+```cpp
+class classes {
+   private:
+      int number_pu;
+      int number_soc;
+
+   public:
+      void method_0();  // method 0
+      void method_1();  // method 1
+      void method_2();  // method 2
+      void method_3();  // method 3
+};
+```
+
 ### 2.3.1. Philosophers T-DNC/NTM-MPSoC
+
+```cpp
+class philosophers : private classes {
+   private:
+      int number_p_pu;
+      int number_p_soc;
+
+   public:
+      void method_p0();  // method 0
+      void method_p1();  // method 1
+      void method_p2();  // method 2
+      void method_p3();  // method 3
+};
+```
 
 #### 2.3.1.1. PU-NTM
 
@@ -286,6 +314,20 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 
 ### 2.3.2. Soldiers T-DNC/NTM-MPSoC
 
+```cpp
+class soldiers : private classes {
+   private:
+      int number_s_pu;
+      int number_s_soc;
+
+   public:
+      void method_s0();  // method 0
+      void method_s1();  // method 1
+      void method_s2();  // method 2
+      void method_s3();  // method 3
+};
+```
+
 #### 2.3.2.1. PU-NTM
 
 #### 2.3.2.2. SoC-NTM
@@ -293,6 +335,20 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 #### 2.3.2.3. MPSoC-NTM
 
 ### 2.3.3. Workers T-DNC/NTM-MPSoC
+
+```cpp
+class workers : private classes {
+   private:
+      int number_w_pu;
+      int number_w_soc;
+
+   public:
+      void method_w0();  // method 0
+      void method_w1();  // method 1
+      void method_w2();  // method 2
+      void method_w3();  // method 3
+};
+```
 
 #### 2.3.3.1. PU-NTM
 
