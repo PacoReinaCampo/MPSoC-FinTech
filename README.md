@@ -39,7 +39,7 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 #### 0.0.8.1 Previously Developed Hardware
 #### 0.0.8.2 Commercial Components Usage
 
-## 0.1. Best Practices
+## 0.1. BEST PRACTICES
 
 ### 0.1.1. HARDWARE
 ### 0.1.2. SOFTWARE
@@ -730,9 +730,7 @@ sudo make install
 
 # 4. CONCLUSION
 
-## 4.1. OPEN SOURCE TOOLS FOR WINDOWS USERS!
-
-### 4.1.0. Install Prerequisites
+## 4.0. Install Prerequisites
 
 1. Settings → Apps → Apps & features → Related settings, Programs and
 Features → Turn Windows features on or off → Windows Subsystem for
@@ -740,7 +738,7 @@ Linux
 
 2. Microsoft Store → INSTALL UBUNTU
 
-Library
+Front-End and Back-End Library
 type:
 ```
 sudo apt update
@@ -750,9 +748,23 @@ sudo apt install bison cmake flex freeglut3-dev libcairo2-dev libgsl-dev \
 libncurses-dev libx11-dev m4 python-tk python3-tk swig tcl tcl-dev tk-dev tcsh
 ```
 
-### 4.1.1. Front-End
-
+Synthesizer Library
 type:
+```
+sudo apt update
+sudo apt upgrade
+```
+
+```
+sudo apt -y install build-essential clang bison flex \
+libreadline-dev gawk tcl-dev libffi-dev git make gnat \
+graphviz xdot pkg-config python3 libboost-system-dev \
+libboost-python-dev libboost-filesystem-dev zlib1g-dev
+```
+
+## 4.1. Front-End
+
+type for Simulators:
 ```
 sudo apt install verilator
 sudo apt install iverilog
@@ -762,6 +774,7 @@ cd /mnt/c/../sim/verilog/regression/wb/iverilog
 source SIMULATE-IT
 ```
 
+type for Synthesizer:
 ```
 sudo apt install yosys
 
@@ -769,7 +782,48 @@ cd /mnt/c/../synthesis/yosys
 source SYNTHESIZE-IT
 ```
 
-### 4.1.2. Back-End
+### 4.1.1. Simulator Instalation
+
+#### 4.1.1.1. Install (System)Verilog Icarus Verilog Simulator
+
+#### 4.1.1.2. Install VHDL GHDL Simulator
+
+type:
+```
+git clone https://github.com/ghdl/ghdl
+
+cd ghdl
+./configure --prefix=/usr/local
+make
+sudo make install
+```
+
+### 4.1.2. Synthesizer Instalation
+
+#### 4.1.2.1. Install Yosys (System)Verilog Synthesizer
+
+type:
+```
+git clone https://github.com/YosysHQ/yosys
+
+cd yosys
+make
+sudo make install
+```
+
+#### 4.1.2.2. Install Yosys VHDL Synthesizer
+
+type for Plugin:
+```
+git clone https://github.com/ghdl/ghdl-yosys-plugin
+
+cd ghdl-yosys-plugin
+make GHDL=/usr/local
+sudo yosys-config --exec mkdir -p --datdir/plugins
+sudo yosys-config --exec cp "ghdl.so" --datdir/plugins/ghdl.so
+```
+
+## 4.2. Back-End
 
 type:
 ```
@@ -790,54 +844,6 @@ cd /mnt/c/../synthesis/qflow
 source FLOW-IT
 ```
 
-## 4.2. OPEN SOURCE SYNTHESIZER FOR WINDOWS USERS!
+### 4.2.1. Simulator Instalation
 
-### 4.2.0. Install Prerequisites
-
-#### 4.2.0.1. For WINDOWS Users!
-
-1. Settings → Apps → Apps & features → Related settings, Programs and Features → Turn Windows features on or off → Windows Subsystem for Linux
-
-2. Microsoft Store → INSTALL UBUNTU
-
-#### 4.2.0.2. For WINDOWS and LINUX Users
-
-```
-sudo apt update
-sudo apt upgrade
-```
-
-```
-sudo apt -y install build-essential clang bison flex \
-libreadline-dev gawk tcl-dev libffi-dev git make gnat \
-graphviz xdot pkg-config python3 libboost-system-dev \
-libboost-python-dev libboost-filesystem-dev zlib1g-dev
-```
-
-### 4.2.1. Install GHDL
-```
-git clone https://github.com/ghdl/ghdl
-
-cd ghdl
-./configure --prefix=/usr/local
-make
-sudo make install
-```
-
-### 4.2.2. Install Yosys
-```
-git clone https://github.com/YosysHQ/yosys
-
-cd yosys
-make
-sudo make install
-```
-
-### 4.2.3. Install Synthesizer Plugin
-```
-git clone https://github.com/ghdl/ghdl-yosys-plugin
-cd ghdl-yosys-plugin
-make GHDL=/usr/local
-sudo yosys-config --exec mkdir -p --datdir/plugins
-sudo yosys-config --exec cp "ghdl.so" --datdir/plugins/ghdl.so
-```
+### 4.2.2. Printer Instalation
