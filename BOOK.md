@@ -462,7 +462,7 @@ class traditional_workers : private traditional_classes {
 
 #### 3.6.2.2. Network on Chip
 
-### 3.6.3. Multi Processor System on Chip
+### 3.6.3. Multi-Processor System on Chip
 
 # 4. WORKFLOW
 

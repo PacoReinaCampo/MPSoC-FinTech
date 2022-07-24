@@ -1,8 +1,5 @@
----
-title:  Financial Technology with a Multi-Processor System on Chip
-author: QueenField
-geometry: "left = 3cm, right = 2cm, top = 3cm, bottom = 2cm"
----
+# Financial Technology with a Multi-Processor System on Chip
+##  QueenField
 
 ![QueenField](../master/icon.jpg)
 
@@ -464,7 +461,7 @@ class traditional_workers : private traditional_classes {
 
 #### 3.6.2.2. Network on Chip
 
-### 3.6.3. Multi Processor System on Chip
+### 3.6.3. Multi-Processor System on Chip
 
 # 4. WORKFLOW
 
