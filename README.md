@@ -99,6 +99,8 @@ An Automation Financial Method (AFM) is the technology and innovation that aims 
 
 ### 1.6.2. UVM-Verilog
 
+![UVM Diagram Overview](../bench/uvm-testbench.png)
+
 #### 1.6.2.1. UVM Agent
 #### 1.6.2.2. UVM Driver
 #### 1.6.2.3. UVM Enviroment
@@ -366,6 +368,10 @@ class traditional_workers : private traditional_classes {
 #### 2.2.3.2. SoC-NTM
 
 #### 2.2.3.3. MPSoC-NTM
+
+## 2.3. REGISTERS
+
+## 2.4. INTERRUPTIONS
 
 # 3. ORGANIZATION
 
