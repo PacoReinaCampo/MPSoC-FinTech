@@ -1072,7 +1072,7 @@ class traditional_workers : private traditional_classes {
 
 ##### 3.1.6.2.2. Traditional Network on Chip
 
-#### 3.1.6.3. Traditional Multi Processor System on Chip
+#### 3.1.6.3. Traditional Multi-Processor System on Chip
 
 ## 3.2. CLASSES
 
