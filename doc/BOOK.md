@@ -394,7 +394,7 @@ geometry: "left = 3cm, right = 2cm, top = 3cm, bottom = 2cm"
 
 ```
 cd synthesis/yosys
-source SYNTHESIZE-IT
+source synthesize.sh
 ```
 
 #### 0.1.1.1. ASIC
@@ -402,7 +402,7 @@ source SYNTHESIZE-IT
 type:
 ```
 cd synthesis/qflow
-source FLOW-IT
+source flow.sh
 ```
 
 #### 0.1.1.2. FPGA
@@ -410,7 +410,7 @@ source FLOW-IT
 type:
 ```
 cd synthesis/symbiflow
-source FLOW-IT
+source flow.sh
 ```
 
 ### 0.1.2. SOFTWARE
@@ -1549,17 +1549,17 @@ sudo make install
 
 ```
 cd sim/verilog/regression/wb/vtor
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/verilog/regression/ahb3/vtor
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/verilog/regression/axi4/vtor
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ### 4.1.3. Verifying System Level of Hardware
@@ -1602,17 +1602,17 @@ sudo make install
 
 ```
 cd sim/vhdl/regression/wb/ghdl
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/vhdl/regression/ahb3/ghdl
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/vhdl/regression/axi4/ghdl
-source SIMULATE-IT
+source simulate.sh
 ```
 
 **Verilog Hardware Description Language Simulator**
@@ -1630,17 +1630,17 @@ sudo make install
 
 ```
 cd sim/verilog/regression/wb/iverilog
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/verilog/regression/ahb3/iverilog
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ```
 cd sim/verilog/regression/axi4/iverilog
-source SIMULATE-IT
+source simulate.sh
 ```
 
 ### 4.1.6. Synthesizing Register Transfer Level of Hardware
@@ -1660,7 +1660,7 @@ sudo make install
 
 ```
 cd synthesis/yosys
-source SYNTHESIZE-IT
+source synthesize.sh
 ```
 
 **VHDL Hardware Description Language Synthesizer**
@@ -1677,7 +1677,7 @@ sudo yosys-config --exec cp "ghdl.so" --datdir/plugins/ghdl.so
 
 ```
 cd synthesis/yosys
-source SYNTHESIZE-IT
+source synthesize.sh
 ```
 
 ### 4.1.7. Optimizing Register Transfer Level of Hardware
@@ -1697,7 +1697,7 @@ sudo make install
 
 ```
 cd synthesis/yosys
-source SYNTHESIZE-IT
+source synthesize.sh
 ```
 
 ### 4.1.8. Verifying Register Transfer Level of Hardware
@@ -1845,7 +1845,7 @@ sudo make install
 
 ```
 cd synthesis/qflow
-source FLOW-IT
+source flow.sh
 ```
 
 ### 4.2.7. Checking Switch Level of Hardware DRC
