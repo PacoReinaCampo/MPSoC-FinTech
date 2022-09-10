@@ -4,5 +4,5 @@ subtitle: 'QueenField ![](../../icon.jpg)'
 
 author: Paco Reina Campo
 
-abstract: FinTech with MPSoC-NTM verified with UVM/OSVVM/FV.
+abstract: FinTech with a MPSoC-NTM verified with UVM/OSVVM/FV.
 ---
