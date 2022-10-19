@@ -1,6 +1,6 @@
 ---
 title: 'Financial Technology with a Multi-Processor System on Chip'
-subtitle: 'QueenField ![](../../icon.jpg)'
+subtitle: 'QueenField ![](../../mpsoc-fintech.svg){width=17cm}'
 
 author: Paco Reina Campo
 
