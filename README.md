@@ -3,4 +3,4 @@
 
 ![QueenField](../main/icon.jpg)
 
-**FinTech with a MPSoC-NTM verified with UVM/OSVVM/FV**
+**FinTech with a MPSoC-{ANN/DNC/NTM} verified with UVM/OSVVM/FV**
